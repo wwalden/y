@@ -12,11 +12,6 @@ app.use((req, res, next) => {
 
 app.use(express.static("public"))
 
-
-app.get('/about', (req, res) => {
-  res.send({'message': 'hello world'})
-})
-
 const PORT = process.env.PORT || 4200
 
 app.listen(PORT, () => {
