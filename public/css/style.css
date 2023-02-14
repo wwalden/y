@@ -1,0 +1,89 @@
+.header {
+  height: 200px;
+  background-color: blueviolet;
+
+}
+
+
+.main {
+  height: 600px;
+
+}
+
+
+
+.footer {
+  height: 200px;
+  background-color: green;
+
+}
+
+/* .parallax-effect {
+  background-image: url("https://images.unsplash.com/photo-1453747063559-36695c8771bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1050&q=80");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+
+/* .parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax1 {
+  background-image: url("https://www.codeur.com/tuto/wp-content/uploads/2022/02/p1.jpg");
+} */
+/* .parallax2 {
+  background-image: url("https://www.codeur.com/tuto/wp-content/uploads/2022/02/p1.jpg");
+} */
+
+
+
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 2px;
+}
+.section { 
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  transform-style:preserve-3d;
+
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+  background-attachment: fixed
+}
+
+.static {
+  background: red;
+}
+.bg1::after {
+  background-image: url('https://placekitten.com/g/900/700');
+}
+
+.bg2::after {
+  background-image: url('https://placekitten.com/g/800/600');
+}
